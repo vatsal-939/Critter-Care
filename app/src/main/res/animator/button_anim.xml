@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <objectAnimator
+            android:propertyName="translationZ"
+            android:valueFrom="8dp"
+            android:valueTo="2dp"
+            android:duration="200" />
+    </item>
+    <item>
+        <objectAnimator
+            android:propertyName="translationZ"
+            android:valueFrom="2dp"
+            android:valueTo="8dp"
+            android:duration="200" />
+    </item>
+</selector>
+
