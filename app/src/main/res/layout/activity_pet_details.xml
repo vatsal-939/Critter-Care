@@ -19,7 +19,7 @@
             android:id="@+id/profile_image"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_user"
+            android:src="@drawable/ic_pet"
             android:layout_gravity="end"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="4dp"
@@ -51,5 +51,12 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicines_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:padding="8dp"
+        tools:listitem="@layout/medicine_list_item"/>
 
 </LinearLayout>

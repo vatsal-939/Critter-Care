@@ -1,0 +1,133 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Medicine Name and Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+
+        <!-- Medicine Name -->
+        <TextView
+            android:id="@+id/medicine_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Medicine Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"/>
+
+        <!-- Time to Take Medicine -->
+        <TextView
+            android:id="@+id/medicine_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00 AM"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <!-- Checkboxes for Days of the Week + "All at Once" -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:padding="8dp">
+
+        <!-- Sunday Checkbox -->
+        <CheckBox
+            android:id="@+id/sunday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif"/>
+
+        <!-- Monday Checkbox -->
+        <CheckBox
+            android:id="@+id/monday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/tuesday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/wednesday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/thursday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/friday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/saturday_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+
+        <!-- All at Once Checkbox -->
+        <CheckBox
+            android:id="@+id/all_at_once_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:enabled="false"
+            android:buttonTint="@color/black"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif" />
+    </GridLayout>
+
+</LinearLayout>

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:padding="16dp">
 
     <!-- App Logo or Header Image -->
     <ImageView
@@ -27,6 +26,10 @@
         android:layout_height="wrap_content"
         android:hint="Name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@android:color/black"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@android:color/black"
         app:layout_constraintTop_toBottomOf="@id/imageLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/black"
             android:textColorHint="@color/text_secondary" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,6 +51,10 @@
         android:layout_height="wrap_content"
         android:hint="Phone Number"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@android:color/black"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@android:color/black"
         app:layout_constraintTop_toBottomOf="@id/inputLayoutName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/black"
             android:textColorHint="@color/text_secondary" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,14 +85,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Doctor"
-            android:textColor="@color/text_primary" />
+            android:buttonTint="@color/radio_button_tint_color"
+            android:textColor="@color/black" />
 
         <RadioButton
             android:id="@+id/radioPatient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Patient"
-            android:textColor="@color/text_primary"
+            android:buttonTint="@color/radio_button_tint_color"
+            android:textColor="@color/black"
             android:layout_marginStart="24dp" />
     </RadioGroup>
 
@@ -95,7 +104,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:backgroundTint="@color/button_color"
+        android:backgroundTint="@color/black"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:layout_marginTop="24dp"
