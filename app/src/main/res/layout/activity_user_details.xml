@@ -87,4 +87,17 @@
         android:scrollbars="vertical"
         android:padding="8dp"
         tools:listitem="@layout/pet_list_item"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ADD ANIMAL"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        android:stateListAnimator="@animator/button_anim" />
 </LinearLayout>
