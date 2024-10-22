@@ -7,6 +7,10 @@
     android:padding="16dp"
     android:background="@color/background_color">
 
+
+
+
+
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
