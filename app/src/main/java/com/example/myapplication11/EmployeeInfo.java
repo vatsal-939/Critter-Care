@@ -40,6 +40,4 @@ public class EmployeeInfo {
     public void setEmployeeDesignation(String employeeDesignation) {
         this.employeeDesignation = employeeDesignation;
     }
-
-
 }
