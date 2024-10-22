@@ -114,8 +114,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-
-                Log.d(TAG, "Radio group: " + radioGroup.toString());
                 Log.d(TAG, "Input data: Name=" + name + ", Phone=" + phone + ", SelectedId=" + selectedId);
 
                 if (TextUtils.isEmpty(name) || TextUtils.isEmpty(phone)) {
