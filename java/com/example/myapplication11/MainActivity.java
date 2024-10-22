@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     int selectedId;
     FileOutputStream fstream;
 
+
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
