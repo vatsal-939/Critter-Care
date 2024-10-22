@@ -39,6 +39,9 @@ public class VerifyOtpActivity extends AppCompatActivity {
     Intent intent;
     FileInputStream fstream;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
