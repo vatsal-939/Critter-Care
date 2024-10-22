@@ -43,16 +43,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton r1, r2;
     int selectedId;
     FileOutputStream fstream;
-
-
-
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

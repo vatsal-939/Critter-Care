@@ -24,10 +24,6 @@ public class EmployeeInfo {
     public void setEmployeeName(String employeeName) {
         this.employeeName = employeeName;
     }
-
-
-
-
     public String getEmployeeContactNumber() {
         return employeeContactNumber;
     }
